@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Dear Shreya!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <audio id="bg-music" src="assets/audio/romantic.mp3" loop></audio>
+
+  <section id="welcome" class="section">
+    <img src="assets/images/herphoto.jpg" alt="Her Photo" class="welcome-photo" />
+    <h1>🎂 Happiest Birthday, Shreya! 🎈</h1>
+    <p>Get ready for a little journey full of love, laughs, and maybe a few embarrassing photos... 😜</p>
+    <button onclick="goToNext('message')">Let's Start</button>
+  </section>
+
+  <section id="message" class="section hidden">
+    <div id="typed-message"></div>
+    <button onclick="goToNext('gallery')">Next ➡️</button>
+  </section>
+
+  <section id="gallery" class="section hidden">
+    <h2>Our Memories Together 📷</h2>
+    <div class="gallery">
+      <img src="assets/images/photo1.jpg" alt="memory1" />
+      <img src="assets/images/photo2.jpg" alt="memory2" />
+      <img src="assets/images/photo3.jpg" alt="memory3" />
+    </div>
+    <button onclick="goToNext('quiz')">Next ➡️</button>
+  </section>
+
+  <section id="quiz" class="section hidden">
+    <h2>Quiz Time! 💕</h2>
+    <div id="quiz-container"></div>
+    <button onclick="goToNext('surprise')">Next ➡️</button>
+  </section>
+
+  <section id="surprise" class="section hidden">
+    <h2>Almost There... 😘</h2>
+    <p>Now... close your eyes... and count till 20 to get your surprise! 💝</p>
+    <button onclick="finalSurprise()">🎆 Reveal</button>
+    <div id="surprise-animation" class="hidden">🎉🎉🎉</div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

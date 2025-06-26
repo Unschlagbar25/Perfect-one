@@ -1,0 +1,94 @@
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #ffe6f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.section {
+  padding: 50px;
+  text-align: center;
+  display: none;
+  min-height: 100vh;
+}
+.section:first-of-type {
+  display: block;
+}
+h1, h2 {
+  color: #ff4da6;
+}
+button {
+  background: #ff99cc;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background: #ff66b2;
+}
+.hidden {
+  display: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+#typed-message {
+  font-size: 1.2rem;
+  margin: 20px auto;
+  width: 80%;
+  border: 2px dashed #ffccdd;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff0f5;
+}
+#surprise-animation {
+  font-size: 2rem;
+  margin-top: 20px;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+@keyframes float {
+  0% { transform: translateY(0) rotate(0);}
+  100% { transform: translateY(-100px) rotate(360deg);}
+}
+/*.heart {
+  position: absolute;
+  width: 24px; height: 24px;
+  background: url('assets/doodles/heart.png') no-repeat center/contain;
+  animation: float 4s ease-in infinite;
+}*/
+.welcome-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff66b2;
+  margin: 0 auto 20px auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(255, 102, 178, 0.6);
+}
+.hidden {
+  display: none;
+}
